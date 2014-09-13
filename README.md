@@ -13,9 +13,9 @@ Include the `imageToGreetings.js` in the html page.
 ```
 <script src="js/imageToGreetings.js"></script>
 ```
+
 Now add the following into the `main.js` file which is associated with the html page.
 
-### Call:
 ```
   var data = {
 		// id of the canvas element
