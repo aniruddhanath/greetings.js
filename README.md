@@ -5,6 +5,8 @@ This is a JavaScript library for creating an **Animated Greetings Message** from
 It basically processes the image file, then manipulates the pixels and finally renders the output
 in an html page using **HTML5 Canvas**
 
+[Check the Demo](http://image-to-greetings.herokuapp.com/)
+
 Usage
 -----
 
