@@ -39,5 +39,5 @@ Now add the following into the `main.js` file which is associated with the html 
 `myCanvas.imageProcessing()` processes the image data.
 And `myCanvas.draw()` finally renders it to the html page.
 
-> For more clearity, the example folder can be checked.
+> For more clarity, the example folder can be checked.
     
