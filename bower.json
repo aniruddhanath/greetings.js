@@ -1,0 +1,14 @@
+{
+  "name": "greetings.js",
+  "main": "greetings.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/anhee/greetings.js",
+  "authors": [
+    "Aniruddha Nath <aniruddhanath1@gmail.com>"
+  ],
+  "description": "A JavaScript module for creating a visually appealing greetings message",
+  "keywords": [
+    "greetings"
+  ],
+  "license": "MIT"
+}
