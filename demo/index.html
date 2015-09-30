@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Greetings.js</title>
+    <style type="text/css">
+    .greetings-container {
+        width: 700px;
+        margin: 0px auto;
+    }
+    
+    #canvas {
+        width: 100%;
+        background: rgba(0, 0, 40, 1);
+        box-shadow: 0px 0px 7px rgba(0, 0, 0, 1);
+    }
+    
+    #image {
+        display: none;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="greetings-container">
+        <canvas id="canvas"></canvas>
+    </div>
+    <img src="image.png" id="image">
+    <script type="text/javascript" src="../greetings.js"></script>
+    <script type="text/javascript">
+    window.onload = function() {
+        var data = {
+            canvas: 'canvas',
+            image: 'image',
+            size: 8,
+            scale: 6,
+        };
+
+        Greetings.create(data);
+    }
+    </script>
+</body>
+
+</html>

@@ -1,43 +1,44 @@
-Image-To-Greetings
-==================
+greetings.js
+============
 
-This is a JavaScript library for creating an **Animated Greetings Message** from any image.
-It basically processes the image file, then manipulates the pixels and finally renders the output
-in an html page using **HTML5 Canvas**
+A JavaScript module for creating a visually appealing **Greetings Message**.
+It processes a small image, then manipulates the pixels and finally renders the output 
+in **HTML5 Canvas**
 
-[Check the Demo](http://image-to-greetings.herokuapp.com/)
+[Demo](http://anhee.github.io/greetings.js/)
 
 Usage
 -----
 
-Include the `imageToGreetings.js` in the html page.
+Include an image from which the greetings is to be created. 
+Also set up the `canvas` - element where the final output will rendered.
 
 ```
-<script src="js/imageToGreetings.js"></script>
+<div class="greetings-container">
+    <canvas id="canvas"></canvas>
+</div>
+<img src="image.png" id="image">
 ```
 
-Now add the following into the `main.js` file which is associated with the html page.
+Include `greetings.js` after the `img` tag.
+Then configure and create the greetings using following script.
 
 ```
   var data = {
-		// id of the canvas element
-		canvasId : 'canvas',
-		// id of the image element
-		imageId : 'image',
-		// size of the particle
-		particleSize : 5,
-		// canvas to image height, width size ratio
-		scaleFactor : 6,
+		// canvas element id
+		canvas : 'canvas',
+
+		// image element id
+		image : 'image',
+
+		// particles radius
+		size : 5,
+
+		// image scale-up factor
+		scale : 6,
 	};
 
-	var myCanvas = imageToGreetings.create(data);
-	myCanvas.imageProcessing();
-	myCanvas.draw();
+	Greetings.create(data);
 ```
 
-`imageToGreetings.create(data)` initializes the class with the given data.
-`myCanvas.imageProcessing()` processes the image data.
-And `myCanvas.draw()` finally renders it to the html page.
-
-> For more clarity, the example folder can be checked.
     
