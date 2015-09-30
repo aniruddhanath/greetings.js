@@ -1,7 +1,7 @@
 greetings.js
 ============
 
-A JavaScript module for creating a visually appealing **Greetings Message**.
+A JavaScript module for creating a visually appealing **greetings message**.
 It processes a small image, then manipulates the pixels and finally renders the output 
 in **HTML5 Canvas**.
 
@@ -9,12 +9,17 @@ in **HTML5 Canvas**.
 
 Usage
 -----
+#### Install
+```
+bower install greetings.js
+```
 
+#### Setup
 Include an image from which the greetings is to be created. 
 Also set up the `canvas` - element where the final output will rendered.
 
 ```
-<img src="image.png" id="image">
+<img src="sample.png" id="image">
 
 <div class="greetings-container">
     <canvas id="canvas"></canvas>
