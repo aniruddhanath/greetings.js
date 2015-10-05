@@ -42,6 +42,9 @@ var data = {
 
 	// image scale-up factor
 	scale : 6,
+
+	// density factor
+	density : 6,
 };
 
 Greetings.create(data);
