@@ -11,7 +11,7 @@
 
 var Greetings = (function(greet) {
 
-    var Engine = function(canvas, image, scale, size) {
+    var Engine = function(canvas, image, scale, size, density) {
         this.canvas = canvas;
         this.context = canvas.getContext("2d");
 
@@ -19,6 +19,7 @@ var Greetings = (function(greet) {
 
         this.scale_factor = scale;
         this.particle_size = size;
+        this.density = density;
 
         this.particles = [];
     };
@@ -75,7 +76,7 @@ var Greetings = (function(greet) {
 
         var i, particle, radius, length = this.particles.length;
 
-        for (i = 0; i < length; i++) {
+        for (i = 0; i < length; i = i + this.density) {
             particle = this.particles[i];
 
             // making particle radius oscillate in first and second quadrant
@@ -94,8 +95,9 @@ var Greetings = (function(greet) {
         var image = document.getElementById(data.image);
         var scale = data.scale || 6;
         var size = data.size || 8;
+        var density = data.density || 6;
 
-        var engine = new Engine(canvas, image, scale, size);
+        var engine = new Engine(canvas, image, scale, size, density);
         engine.process();
 
         function animate() {
