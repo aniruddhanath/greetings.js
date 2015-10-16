@@ -56,8 +56,8 @@ var Greetings = (function(greet) {
 
             if (grey < 199) {
                 position = {
-                    x: Math.floor(i / 4 % image_width * this.scale_factor),
-                    y: Math.floor(i / 4 / image_width * this.scale_factor),
+                    x: i / 4 % image_width * this.scale_factor | 0,
+                    y: i / 4 / image_width * this.scale_factor | 0,
                     color: "rgba(" + r + ", " + g + ", " + b + ", 1)",
                     radius: Math.random() * this.particle_size,
                     offset: Math.random() * 500
@@ -71,7 +71,6 @@ var Greetings = (function(greet) {
         var oscillation_factor = 500,
             context = this.context;
         context.clearRect(0, 0, this.canvas.width, this.canvas.height);
-        context.globalCompositeOperation = "source-over";
         context.globalCompositeOperation = "lighter";
 
         var i, particle, radius, length = this.particles.length;
