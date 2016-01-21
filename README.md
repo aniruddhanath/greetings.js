@@ -5,7 +5,7 @@ A JavaScript module for creating a visually appealing **greetings message**.
 It processes a small image, then manipulates the pixels and finally renders the output 
 in **HTML5 Canvas**.
 
-[Demo](http://anhee.github.io/greetings.js/)
+[Demo](http://aniruddhanath.github.io/greetings.js/)
 
 Usage
 -----
